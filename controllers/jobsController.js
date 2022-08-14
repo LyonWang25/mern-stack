@@ -1,5 +1,5 @@
 const createJob = async (req, res) => {
-  res.send('register user');
+  res.send('create job');
 };
 
 const deleteJob = async (req, res) => {
@@ -15,7 +15,7 @@ const updateJob = async (req, res) => {
 };
 
 const showStats = async (req, res) => {
-  res.send('show state');
+  res.send('show stats');
 };
 
 export { createJob, deleteJob, getAllJobs, updateJob, showStats };
