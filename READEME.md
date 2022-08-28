@@ -1,5 +1,8 @@
 # Jobify
 
+//npm run client 
+//npm run start
+
 #### Track Your Job Search
 
 Project in Action - [Jobify](https://www.jobify.live/)
