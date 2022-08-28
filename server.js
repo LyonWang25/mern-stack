@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express();
 import dotenv from 'dotenv';
+import 'express-async-errors';
 dotenv.config();
 
 //db and authenticateUser
@@ -20,8 +21,8 @@ app.get('/', (req, res) => {
   res.send('Welcome!');
 });
 
-app.use('./api/v1/auth', authRouter);
-app.use('./api/v1/jobs', jobsRouter);
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/jobs', jobsRouter);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
